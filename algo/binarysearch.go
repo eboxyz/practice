@@ -4,26 +4,19 @@ package algo
 
 //Search ... ok?
 func Search(arr []int, num int) bool {
-	middle := len(arr) / 2
-	left := arr[:middle]
-	right := arr[middle:]
-
+	start := 0
+	end := len(arr) - 1
+	middle := (start + end) / 2
 	var ok bool
 
-	if num < arr[middle] {
-		for i := 0; i < len(left); i++ {
-			if left[i] == num {
-				ok = true
-			}
+	for i := start; i < end; i++ {
+		if arr[middle] == num {
+			ok = true
+		} else if arr[middle] < num {
+			start = middle + 1
+		} else if arr[middle] > num {
+			end = middle - 1
 		}
-	} else if num >= arr[middle] {
-		for i := 0; i < len(right); i++ {
-			if right[i] == num {
-				ok = true
-			}
-		}
-	} else {
-		ok = false
 	}
 
 	return ok
