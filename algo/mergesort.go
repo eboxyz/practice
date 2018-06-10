@@ -1,4 +1,4 @@
-package mergesort
+package algo
 
 func merge(left, right []int) []int {
 	size, i, j := len(left)+len(right), 0, 0
