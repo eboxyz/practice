@@ -2,10 +2,10 @@ package main
 
 import (
 	"algo-boi/algo"
-	"fmt"
 )
 
 func main() {
+	algo.HashMap()
 	// ar := []int{5, 3, 4, 1, 2}
 	// mergesort.MergeSort(ar)
 	// var one float64
@@ -13,6 +13,9 @@ func main() {
 
 	// coursera.Solve(1, 2)
 
-	ar := []int{1, 2, 3, 4, 5}
-	fmt.Println(algo.Search(ar, 3))
+	// ar := []int{5, 4, 3, 2, 1}
+	// fmt.Println(algo.SelectionSort(ar))
+	// var acc int
+	// algo.Divide(2, 3, acc)
+
 }
