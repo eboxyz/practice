@@ -1,4 +1,4 @@
-package algo
+package search
 
 //binary search, searches through an array for a specific element
 
